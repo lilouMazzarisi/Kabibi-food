@@ -1,1 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+header {
+  background-image: url(../../section/header/img/img_bg_slider_home01.jpg);
+  height: 500px;
+}
+
+h1 {
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */
