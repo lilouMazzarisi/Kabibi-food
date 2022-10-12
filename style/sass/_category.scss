@@ -1,0 +1,22 @@
+@use 'variables';
+
+
+.Category {
+    background: linear-gradient(340deg, rgba(250, 246, 240, 0.3660057773109243) 0%, rgba(250, 246, 240, 0) 100%),
+        url(../../section/categorie/img/imgbgcategory.jpg) no-repeat center;
+    background-size: cover;
+    height: 750px;
+    padding: 50px;
+
+    &__foods {
+        display: flex;
+
+        &--item {
+            background-color: variables.$color-green;
+        }
+
+        &--icon {
+            width: 20px
+        }
+    }
+}

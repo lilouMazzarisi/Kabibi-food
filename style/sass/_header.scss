@@ -1,9 +1,8 @@
 @use 'variables';
 
-header {
+Header {
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 74%, rgba(0, 0, 0, 1) 100%),
-        url(../../section/header/img/img_bg_slider_home01.jpg) no-repeat center;
-    background-color: black;
+        url(../../section/Header/img/img_bg_slider_home01.jpg) no-repeat center;
     background-size: cover;
     height: 750px;
     padding: 50px;
@@ -19,8 +18,8 @@ a {
     }
 }
 
-// Section header__top-bar
-.header {
+// Section Header__top-bar
+.Header {
     &__top-bar {
         display: flex;
         justify-content: space-between;
@@ -53,10 +52,14 @@ a {
 
         &--booking {
             @include variables.goldenButton;
+
+            &:hover {
+                color: variables.$color-white;
+            }
         }
     }
 
-    // Section header_banner
+    // Section Header_banner
     &__banner {
         margin: 50px;
         display: grid;
