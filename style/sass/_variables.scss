@@ -2,12 +2,46 @@
 $color-green: #c6ad65;
 $color-beige: #faf6f0;
 $color-white: #fff;
+$color-op-white: #ffffff61;
 $color-black: #000;
 $color-grey: #aeaeae;
 
 // SIZES
 $basic-size: 14px;
-$h1-size: 5rem;
+$h1-size: 10rem;
 $h2-size: 2rem;
 $h3-size: 1rem;
 $h4-size: 0.5rem;
+
+@mixin PlayButton {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 35px;
+    color: $color-green;
+    font-size: 1.8rem;
+    outline: 1px solid $color-op-white;
+    outline-offset: 20px;
+}
+
+@mixin transparentButton {
+    outline: 1px solid $color-op-white;
+    border-radius: 5px;
+    width: max-content;
+    height: max-content;
+    text-align: center;
+    padding: 15px 30px;
+    text-transform: uppercase;
+}
+
+@mixin goldenButton {
+    background-color: $color-green;
+    border-radius: 5px;
+    width: max-content;
+    height: max-content;
+    text-align: center;
+    padding: 15px 30px;
+    text-transform: uppercase;
+}
