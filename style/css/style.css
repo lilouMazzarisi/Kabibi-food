@@ -120,19 +120,19 @@ a:hover {
   position: absolute;
   left: 10px;
 }
-.Section__title--subtitel {
+.Section__title--subtitle {
   position: relative;
   top: 80px;
   z-index: 2;
   text-align: center;
 }
-.Section__title--subtitel > h3 {
+.Section__title--subtitle > h3 {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 300;
   padding-bottom: 20px;
 }
-.Section__title--subtitel > q {
+.Section__title--subtitle > q {
   font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 100;
