@@ -14,10 +14,11 @@ $main-font: 'Cormorant Garamond', serif;
 $link-font: Verdana, Geneva, Tahoma, sans-serif;
 
 // SIZES
+$small-size: 10px;
 $basic-size: 14px;
 $p-size: 1.5rem;
 $h1-size: 10rem;
-$h2-size: 12rem;
+$h2-size: 9rem;
 $h3-size: 2rem;
 $h4-size: 0.5rem;
 
@@ -66,7 +67,7 @@ $h4-size: 0.5rem;
     color: $color-beige;
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: -20px;
+    letter-spacing: -10px;
 }
 
 @mixin h3Styling {
