@@ -25,3 +25,8 @@ a {
     position: relative;
     top: -200px;
 }
+
+p {
+    font-size: variables.$p-size;
+    color: variables.$color-grey;
+}

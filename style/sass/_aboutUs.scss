@@ -1,0 +1,36 @@
+@use 'variables';
+
+.About-us {
+    margin-bottom: 100px;
+
+    >img {
+        @include variables.QualityLabel;
+        float: right;
+        top: -150px;
+        margin: 30px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        >img {
+            height: 400px;
+        }
+
+        &--text {
+            display: grid;
+            width: 400px;
+            padding: 50px;
+
+            >a {
+                @include variables.goldenButton;
+                align-self: end;
+            }
+        }
+
+
+
+    }
+}

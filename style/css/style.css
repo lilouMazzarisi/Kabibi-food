@@ -23,6 +23,11 @@ a:hover {
   top: -200px;
 }
 
+p {
+  font-size: 1.5rem;
+  color: #aeaeae;
+}
+
 header {
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%), url(../../section/header/img/img_bg_slider_home01.jpg) no-repeat center;
   background-color: black;
@@ -87,7 +92,8 @@ header {
   letter-spacing: -6px;
 }
 .Header__banner > img {
-  width: 150px;
+  width: 120px;
+  position: relative;
   grid-column: 2;
 }
 .Header__banner--play {
@@ -206,6 +212,40 @@ header {
 .Banner > img:nth-child(odd) {
   width: 20%;
   padding-top: 100px;
+}
+
+.About-us {
+  margin-bottom: 100px;
+}
+.About-us > img {
+  width: 120px;
+  position: relative;
+  float: right;
+  top: -150px;
+  margin: 30px;
+}
+.About-us__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.About-us__container > img {
+  height: 400px;
+}
+.About-us__container--text {
+  display: grid;
+  width: 400px;
+  padding: 50px;
+}
+.About-us__container--text > a {
+  background-color: #c6ad65;
+  border-radius: 5px;
+  width: max-content;
+  height: max-content;
+  text-align: center;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  align-self: end;
 }
 
 /*# sourceMappingURL=style.css.map */
