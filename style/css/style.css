@@ -18,6 +18,11 @@ a:hover {
   color: #c6ad65;
 }
 
+.Relative {
+  position: relative;
+  top: -200px;
+}
+
 header {
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 74%, rgb(0, 0, 0) 100%), url(../../section/header/img/img_bg_slider_home01.jpg) no-repeat center;
   background-color: black;
@@ -117,7 +122,7 @@ header {
 }
 .Section__title > h2 {
   font-size: 12rem;
-  color: #ede1d9;
+  color: #faf6f0;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: -20px;
@@ -185,7 +190,22 @@ header {
 }
 .Category__foods--icon {
   width: 30px;
-  color: #ede1d9;
+  color: #faf6f0;
+}
+
+.Banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Banner > img:nth-child(2) {
+  border: 25px solid white;
+  border-radius: 50%;
+  width: 50%;
+}
+.Banner > img:nth-child(odd) {
+  width: 20%;
+  padding-top: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
