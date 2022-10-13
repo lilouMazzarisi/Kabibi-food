@@ -248,4 +248,58 @@ header {
   align-self: end;
 }
 
+.Menu {
+  background-color: #faf6f0;
+  background: linear-gradient(132deg, rgba(250, 246, 240, 0.3995973389) 0%, rgba(250, 246, 240, 0.6404936975) 100%);
+  padding-bottom: 100px;
+}
+.Menu > img {
+  display: block;
+  position: absolute;
+}
+.Menu__picture-one {
+  height: 500px;
+  width: auto;
+  bottom: -100px;
+}
+.Menu__picture-two {
+  height: 100%;
+  right: 0;
+}
+.Menu__listing {
+  position: sticky;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+}
+.Menu__listing--item {
+  z-index: 5;
+  width: 500px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px 30px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;
+}
+.Menu__listing--item > p {
+  text-align: center;
+  color: #c6ad65;
+  font-size: 3rem;
+}
+.Menu__listing--item:hover {
+  border: 2px dashed #c6ad65;
+}
+.Menu__listing--dish > p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.Menu__listing--dish:first-line {
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Cormorant Garamond", serif;
+}
+
 /*# sourceMappingURL=style.css.map */
