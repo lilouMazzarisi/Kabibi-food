@@ -1,24 +1,15 @@
 @use 'variables';
 
-Header {
+header {
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 74%, rgba(0, 0, 0, 1) 100%),
-        url(../../section/Header/img/img_bg_slider_home01.jpg) no-repeat center;
+        url(../../section/header/img/img_bg_slider_home01.jpg) no-repeat center;
+    background-color: black;
     background-size: cover;
     height: 750px;
     padding: 50px;
 }
 
-a {
-    text-decoration: none;
-    color: variables.$color-white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    &:hover {
-        color: variables.$color-green;
-    }
-}
-
-// Section Header__top-bar
+// Section header__top-bar
 .Header {
     &__top-bar {
         display: flex;
@@ -59,7 +50,7 @@ a {
         }
     }
 
-    // Section Header_banner
+    // Section header_banner
     &__banner {
         margin: 50px;
         display: grid;

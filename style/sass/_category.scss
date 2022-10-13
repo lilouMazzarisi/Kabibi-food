@@ -2,21 +2,58 @@
 
 
 .Category {
-    background: linear-gradient(340deg, rgba(250, 246, 240, 0.3660057773109243) 0%, rgba(250, 246, 240, 0) 100%),
+    background: linear-gradient(132deg, rgba(250, 246, 240, 0.39959733893557425) 0%, rgba(250, 246, 240, 0.6404936974789917) 100%),
         url(../../section/categorie/img/imgbgcategory.jpg) no-repeat center;
     background-size: cover;
     height: 750px;
-    padding: 50px;
+    padding: 30px 0;
+
 
     &__foods {
         display: flex;
+        align-items: center;
+        justify-content: center;
 
-        &--item {
-            background-color: variables.$color-green;
+        &--box {
+            // disposition 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            // box style 
+            min-width: 150px;
+            height: 180px;
+            text-align: center;
+            background-color: variables.$color-white;
+            margin: 15px;
+            padding: 25px;
+
+            &:hover {
+                background-color: variables.$color-green;
+
+                >a {
+                    color: variables.$color-white;
+                }
+            }
         }
 
+        &--text {
+            color: variables.$color-black;
+            font-weight: 100;
+            font-family: variables.$main-font;
+            font-size: 1.2rem;
+            cursor: pointer;
+
+            >p {
+                padding-bottom: 15px;
+            }
+        }
+
+
+
         &--icon {
-            width: 20px
+            width: 30px;
+            color: variables.$color-beige;
         }
     }
 }

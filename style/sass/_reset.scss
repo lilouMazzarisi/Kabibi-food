@@ -10,3 +10,13 @@ body {
     font-size: variables.$basic-size;
     font-family: 'Cormorant Garamond', serif;
 }
+
+a {
+    text-decoration: none;
+    color: variables.$color-white;
+    font-family: variables.$link-font;
+
+    &:hover {
+        color: variables.$color-green;
+    }
+}
