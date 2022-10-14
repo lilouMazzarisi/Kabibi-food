@@ -42,6 +42,7 @@ h4 {
 p {
   font-size: 1.5rem;
   color: #aeaeae;
+  font-weight: 300;
 }
 
 header {
@@ -197,8 +198,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  min-width: 150px;
-  height: 180px;
+  width: 180px;
+  height: 200px;
   text-align: center;
   background-color: #fff;
   margin: 15px;
@@ -207,22 +208,22 @@ header {
 .Category__foods--box:hover {
   background-color: #c6ad65;
 }
-.Category__foods--box:hover > a {
+.Category__foods--box:hover p,
+.Category__foods--box:hover i {
   color: #fff;
 }
 .Category__foods--text {
-  color: #000;
-  font-weight: 100;
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.2rem;
   cursor: pointer;
 }
-.Category__foods--text > p {
+.Category__foods--text p,
+.Category__foods--text i {
   padding-bottom: 15px;
+  font-size: 1.2rem;
+  color: #000;
 }
 .Category__foods--icon {
   width: 30px;
-  color: #faf6f0;
 }
 
 .Banner {
