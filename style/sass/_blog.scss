@@ -1,0 +1,69 @@
+@use 'variables';
+
+.Blog {
+    &__post {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--card {
+            width: min-content;
+            margin: 15px;
+            padding-bottom: 30px;
+            background-color: variables.$color-beige;
+
+            >img {
+                width: 350px;
+            }
+        }
+
+        &--container {
+            padding: 30px;
+
+            >p {
+                color: variables.$color-black;
+                font-weight: 300;
+                padding-bottom: 40px;
+            }
+
+            >a {
+                @include variables.goldenButton;
+                background-color: variables.$color-white;
+                color: variables.$color-black;
+            }
+        }
+
+        &--info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+
+
+            >p {
+                font-weight: 100;
+                font-family: variables.$link-font;
+                font-size: variables.$basic-size;
+
+                >i {
+                    color: variables.$color-green;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+
+    &__partner {
+        max-width: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+
+        >img {
+
+            margin: 40px;
+            filter: grayscale(100%);
+        }
+    }
+}

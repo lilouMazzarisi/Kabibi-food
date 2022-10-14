@@ -4,5 +4,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     font-size: variables.$basic-size;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+a {
+    text-decoration: none;
+    color: variables.$color-white;
+    font-family: variables.$link-font;
+
+    &:hover {
+        color: variables.$color-green;
+    }
+}
+
+.Relative {
+    position: relative;
+    top: -200px;
+}
+
+h1 {
+    font-size: variables.$h1-size;
+}
+
+h2 {
+    font-size: variables.$h2-size;
+}
+
+h3 {
+    font-size: variables.$h3-size;
+}
+
+h4 {
+    font-size: variables.$h4-size;
+}
+
+p {
+    font-size: variables.$p-size;
+    color: variables.$color-grey;
 }

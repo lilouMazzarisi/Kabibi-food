@@ -1,0 +1,52 @@
+@use 'variables';
+
+.Section {
+
+    &__title {
+        display: grid;
+        max-width: 60%;
+
+        >h2 {
+            @include variables.h2Styling;
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        &--subtitle {
+            grid-row: 1;
+            grid-column: 1;
+            align-self: center;
+            justify-self: end;
+            text-align: center;
+
+
+            >h3 {
+                @include variables.h3Styling;
+            }
+
+            >q {
+                font-size: 1rem;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: 100;
+                quotes: none;
+                padding-bottom: 20px;
+            }
+
+        }
+
+    }
+}
+
+// dark mode 
+
+.reverse {
+
+    h2 {
+        opacity: 5%;
+    }
+
+    h3,
+    q {
+        filter: invert(100%);
+    }
+}

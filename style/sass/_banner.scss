@@ -1,0 +1,22 @@
+@use 'variables';
+
+.Banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    >img {
+
+        &:nth-child(2) {
+            border: 25px solid white;
+            border-radius: 50%;
+            width: 50%;
+        }
+
+        &:nth-child(odd) {
+            width: 20%;
+            padding-top: 100px;
+        }
+    }
+}

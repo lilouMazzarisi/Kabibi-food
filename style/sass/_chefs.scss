@@ -1,0 +1,21 @@
+@use 'variables';
+
+.Chefs {
+    background: url(../../section/chef/img/imgbg-ourchefs.jpg) no-repeat center;
+    background-size: cover;
+
+    padding: 100px 0;
+    opacity: 100%;
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        &--profile {
+            margin: 15px;
+            width: auto;
+            height: 300px;
+        }
+    }
+}

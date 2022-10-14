@@ -1,0 +1,150 @@
+@use 'variables';
+
+.Gallery {
+    margin: 30px auto;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 300px);
+        grid-template-rows: repeat(2, 400px);
+        grid-gap: 20px;
+        width: fit-content;
+
+        margin: auto;
+    }
+
+    &__item {
+        position: relative;
+
+        padding: 20px;
+
+        i {
+            display: block;
+            text-align: right;
+        }
+
+
+        &--text {
+
+            padding-top: 150px;
+
+            h4,
+            p {
+                color: transparent;
+                text-align: center;
+                font-weight: lighter;
+            }
+
+            p {
+                @include variables.straightFont;
+                font-size: 1rem;
+            }
+
+        }
+
+
+        &.first {
+            background: url(../../section/gallery/img/img1gallerybox.jpg) no-repeat center;
+            grid-column: 1 /3;
+
+            &:hover {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.6545211834733893) 0%, rgba(0, 0, 0, 0.7413559173669468) 100%), url(../../section/gallery/img/img1gallerybox.jpg) no-repeat center;
+
+                h4,
+                p,
+                i {
+                    color: variables.$color-white;
+                }
+            }
+        }
+
+        &.second {
+            background: url(../../section/gallery/img/img2gallerybox.jpg) no-repeat center;
+            grid-column: 3/4;
+            grid-row: 1;
+
+            &:hover {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.6545211834733893) 0%, rgba(0, 0, 0, 0.7413559173669468) 100%), url(../../section/gallery/img/img2gallerybox.jpg) no-repeat center;
+
+                h4,
+                p,
+                i {
+                    color: variables.$color-white;
+                }
+            }
+        }
+
+        &.third {
+            background: url(../../section/gallery/img/img3gallerybox.jpg) no-repeat center;
+            grid-column: 4/5;
+            grid-row: 1;
+
+            &:hover {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.6545211834733893) 0%, rgba(0, 0, 0, 0.7413559173669468) 100%), url(../../section/gallery/img/img3gallerybox.jpg) no-repeat center;
+
+                h4,
+                p,
+                i {
+                    color: variables.$color-white;
+                }
+            }
+        }
+
+        &.fourth {
+            background: url(../../section/gallery/img/img4gallerybox.jpg) no-repeat center;
+            grid-column: 1/2;
+            grid-row: 2;
+
+            &:hover {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.6545211834733893) 0%, rgba(0, 0, 0, 0.7413559173669468) 100%), url(../../section/gallery/img/img4gallerybox.jpg) no-repeat center;
+
+                h4,
+                p,
+                i {
+                    color: variables.$color-white;
+                }
+            }
+        }
+
+        &.fifth {
+            background: url(../../section/gallery/img/img5gallerybox.jpg) no-repeat center;
+            grid-column: 2/3;
+            grid-row: 2;
+
+            &:hover {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.6545211834733893) 0%, rgba(0, 0, 0, 0.7413559173669468) 100%), url(../../section/gallery/img/img5gallerybox.jpg) no-repeat center;
+
+                h4,
+                p,
+                i {
+                    color: variables.$color-white;
+                }
+            }
+        }
+
+        &.sixth {
+            background: url(../../section/gallery/img/img6gallerybox.jpg) no-repeat center;
+            grid-column: 3/5;
+            grid-row: 2;
+
+            &:hover {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.6545211834733893) 0%, rgba(0, 0, 0, 0.7413559173669468) 100%), url(../../section/gallery/img/img6gallerybox.jpg) no-repeat center;
+
+                h4,
+                p,
+                i {
+                    color: variables.$color-white;
+                }
+            }
+        }
+
+
+    }
+
+    a {
+        @include variables.transparentButton;
+        filter: invert(100%);
+        grid-column: 1/5;
+        margin: 40px auto;
+    }
+}

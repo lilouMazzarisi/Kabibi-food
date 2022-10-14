@@ -1,0 +1,74 @@
+@use 'variables';
+
+.Menu {
+    background-color: variables.$color-beige;
+    background: variables.$bck-beige;
+    padding-bottom: 100px;
+
+    >img {
+        display: block;
+        position: absolute;
+    }
+
+    &__picture-one {
+        height: 500px;
+        width: auto;
+        bottom: -100px;
+    }
+
+    &__picture-two {
+        height: 100%;
+        right: 0;
+    }
+
+    &__listing {
+
+        position: sticky;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        //grid-template-columns: (2, 50%);
+        //grid-template-columns: repeat(2, 50%);
+
+        &--item {
+            z-index: 5;
+
+            width: 500px;
+
+            background-color: variables.$color-white;
+            border-radius: 5px;
+            margin: 20px;
+            padding: 20px 30px;
+
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            align-items: center;
+
+            >p {
+                text-align: center;
+                color: variables.$color-green;
+                font-size: 3rem;
+            }
+
+            &:hover {
+                border: 2px dashed variables.$color-green;
+            }
+        }
+
+        &--dish {
+            >p {
+                font-family: variables.$link-font;
+                font-size: 0.8rem;
+                font-weight: 100;
+            }
+
+            &:first-line {
+                font-size: 1.5rem;
+                color: variables.$color-black;
+                font-family: variables.$main-font;
+            }
+
+
+        }
+    }
+}
