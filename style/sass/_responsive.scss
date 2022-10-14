@@ -1,0 +1,14 @@
+@use 'variables';
+
+// tablett
+
+@media only screen and (min-width:variables.$breakpoint-tablet) and (max-width:variables.$breakpoint-desktop) {
+    .Category {
+        height: 880px;
+
+        &__foods {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}

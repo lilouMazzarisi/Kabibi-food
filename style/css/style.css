@@ -194,6 +194,7 @@ header {
 }
 .Category__foods {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -584,6 +585,17 @@ footer {
   flex-direction: row;
   align-items: center;
 }
+.footer__nav--newsletters form .submit {
+  background-color: #c6ad65;
+}
+.footer__nav--newsletters form > input {
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+}
+.footer__nav--newsletters form > input:first-child {
+  width: 250px;
+}
 .footer__nav--contact {
   width: 300px;
 }
@@ -638,5 +650,14 @@ footer {
 }
 
 /*# sourceMappingURL=Footer.css.map */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .Category {
+    height: 880px;
+  }
+  .Category__foods {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

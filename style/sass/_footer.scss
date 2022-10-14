@@ -58,6 +58,23 @@ footer {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+
+                .submit {
+                    background-color: variables.$color-green;
+                }
+
+                >input {
+                    padding: 10px;
+                    border: none;
+
+                    margin-top: 10px;
+
+                    &:first-child {
+                        width: 250px;
+                    }
+
+
+                }
             }
 
         }
@@ -81,9 +98,6 @@ footer {
             }
         }
     }
-
-
-
 
     &__copyright {
 
