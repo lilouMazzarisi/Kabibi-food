@@ -3,13 +3,18 @@
 footer {
     background-image: url("../../section/footer/img/img-ng-footer.jpg");
     background-size: cover;
-    color: white;
-    font-family: "Cormorant Garamond", serif;
+    font-family: variables.$link-font;
+    color: variables.$color-grey;
+    padding: 50px;
+    font-size: variables.$basic-size;
+    line-height: 30px;
+
 }
 
 .footer {
-    display: flex;
-    justify-content: space-around;
+    max-width: 90%;
+    margin: auto;
+
 
     &__logo {
         display: flex;
@@ -19,63 +24,123 @@ footer {
         padding-bottom: 25px;
     }
 
-    &__About {
-        width: 150px;
-        margin-left: 40px;
+    &__nav {
+        padding: 100px 0;
+        display: flex;
+        justify-content: center;
+
+        h3 {
+            font-family: variables.$main-font;
+            color: variables.$color-white;
+            font-weight: 300;
+            padding-bottom: 20px;
+        }
+
+        a {
+            color: variables.$color-grey;
+        }
+
+        &--about,
+        &--facilities {
+            width: 200px;
+        }
+
+        &--newsletters {
+            width: 400px;
+            padding-right: 40px;
+
+            >p {
+                font-size: variables.$basic-size;
+
+            }
+
+            form {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+        }
+
+        &--contact {
+            width: 300px;
+
+            div {
+                display: flex;
+                align-items: baseline;
+
+                i {
+                    color: variables.$color-green;
+                    padding-right: 10px;
+                }
+
+                >p {
+                    font-size: variables.$basic-size;
+
+                }
+            }
+        }
     }
 
-    &__Newsletters {
-        width: 250px;
-    }
-
-}
-
-li {
-    padding: 5px;
-    list-style: none;
-}
 
 
 
-p {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
+    &__copyright {
 
-.button--gold,
-.button--white:hover,
-.button--transparent,
-.button--white {
-    padding: 1em;
-}
-
-.button--gold,
-.button--white:hover {
-    background-color: #C8A96A;
-    border-color: #C8A96A;
-    color: #fff;
-}
-
-.hr_Down {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    img {
         position: relative;
-        top: -100px;
-        width: auto;
-        height: 100px;
+        width: 80%;
+
+        margin: auto;
+        border-top: 1px solid variables.$color-op-white;
+
+        img {
+            position: absolute;
+            top: -20px;
+            width: auto;
+            left: 50%;
+            height: 80px;
+        }
+
+
+        &--text {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 30px 0;
+
+            >p {
+                font-size: variables.$basic-size;
+
+                a {
+                    color: variables.$color-green;
+                }
+
+            }
+
+
+        }
+
+
     }
-}
 
-input {
-    height: 50px;
-}
+    &__socialMedia {
+        i {
+            color: variables.$color-grey;
+            background-color: variables.$color-op-white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            padding-top: 8px;
 
-.form {
-    display: flex;
-    flex-direction: row;
+            &:hover {
+                color: variables.$color-white;
+                background-color: variables.$color-green;
+            }
+        }
+
+    }
 }
 
 /*# sourceMappingURL=Footer.css.map */
