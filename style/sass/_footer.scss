@@ -62,8 +62,10 @@ p {
     justify-content: space-between;
 
     img {
-        width: 15%;
-        height: 15%;
+        position: relative;
+        top: -100px;
+        width: auto;
+        height: 100px;
     }
 }
 
