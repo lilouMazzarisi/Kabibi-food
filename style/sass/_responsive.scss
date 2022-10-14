@@ -1,0 +1,9 @@
+@use 'variables';
+
+// tablett
+
+@media (min-width:$breakpoint-tablet) and (max-width:$breakpoint-desktop) {
+    .Category {
+        height: 880px;
+    }
+}
