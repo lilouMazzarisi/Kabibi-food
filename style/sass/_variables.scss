@@ -20,7 +20,7 @@ $p-size: 1.5rem;
 $h1-size: 10rem;
 $h2-size: 9rem;
 $h3-size: 2rem;
-$h4-size: 0.5rem;
+$h4-size: 2rem;
 
 @mixin QualityLabel {
     width: 120px;
@@ -75,4 +75,10 @@ $h4-size: 0.5rem;
     text-transform: uppercase;
     font-weight: 300;
     padding-bottom: 20px
+}
+
+@mixin straightFont {
+    font-family: $link-font;
+    font-weight: 100;
+    ;
 }

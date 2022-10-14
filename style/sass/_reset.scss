@@ -26,6 +26,22 @@ a {
     top: -200px;
 }
 
+h1 {
+    font-size: variables.$h1-size;
+}
+
+h2 {
+    font-size: variables.$h2-size;
+}
+
+h3 {
+    font-size: variables.$h3-size;
+}
+
+h4 {
+    font-size: variables.$h4-size;
+}
+
 p {
     font-size: variables.$p-size;
     color: variables.$color-grey;
