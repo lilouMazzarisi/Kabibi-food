@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: auto;
+  }
+
+footer {
+    background-image:url("./img/img-ng-footer.jpg");
+    background-size: cover;
+    color: white;
+    font-family: 'Cormorant Garamond',serif;}
+    .footer {
+           display: flex;
+           justify-content: space-around;
+         &__About {
+            width: 150px;
+            margin-left: 40px;
+         }
+         &__Newsletters {
+            width: 250px;
+         }
+         &__logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+
+         }
+    }
+    
+        li {
+            list-style: none;
+          }
+
+        h3 {
+            font-size: 30px;
+        }
+        a:link 
+{ 
+ text-decoration:none; 
+ color:white;
+ opacity: 60%;
+} 
+li {
+    padding: 5px;
+}
+
+img {
+    width: 15%;
+    height: 15%;
+}
+p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.button--gold, .button--white:hover, .button--transparent, .button--white {
+    padding: 1em;
+}
+  .button--gold, .button--white:hover {
+    background-color: #C8A96A;
+    border-color: #C8A96A;
+    color: #fff; }
+.hr_Down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+input {
+    height: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
