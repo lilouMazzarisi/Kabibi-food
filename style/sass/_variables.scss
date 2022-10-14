@@ -1,12 +1,90 @@
 // COLORS:
 $color-green: #c6ad65;
 $color-beige: #faf6f0;
+$bck-beige: linear-gradient(132deg, rgba(250, 246, 240, 0.39959733893557425) 0%, rgba(250, 246, 240, 0.6404936974789917) 100%);
 $color-white: #fff;
+$color-op-white: #ffffff61;
 $color-black: #000;
 $color-grey: #aeaeae;
 
+
+//FONT FAM 
+
+$main-font: 'Cormorant Garamond', serif;
+$link-font: Verdana, Geneva, Tahoma, sans-serif;
+
 // SIZES
+$small-size: 10px;
 $basic-size: 14px;
+<<<<<<< HEAD
 $h2-size: 2rem;
 $h3-size: 1rem;
 $h3-size: 0.5rem;
+=======
+$p-size: 1.5rem;
+$h1-size: 10rem;
+$h2-size: 9rem;
+$h3-size: 2rem;
+$h4-size: 2rem;
+
+@mixin QualityLabel {
+    width: 120px;
+    position: relative;
+}
+
+@mixin PlayButton {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+
+    text-align: center;
+    padding-top: 35px;
+    color: $color-green;
+
+    font-size: 1.8rem;
+    outline: 1px solid $color-op-white;
+    outline-offset: 20px;
+}
+
+@mixin transparentButton {
+    outline: 1px solid $color-op-white;
+    border-radius: 5px;
+    width: max-content;
+    height: max-content;
+    text-align: center;
+    padding: 15px 30px;
+    text-transform: uppercase;
+}
+
+@mixin goldenButton {
+    background-color: $color-green;
+    border-radius: 5px;
+    width: max-content;
+    height: max-content;
+    text-align: center;
+    padding: 15px 30px;
+    text-transform: uppercase;
+}
+
+@mixin h2Styling {
+    font-size: $h2-size;
+    color: $color-beige;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: -10px;
+}
+
+@mixin h3Styling {
+    font-size: $h3-size;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-bottom: 20px
+}
+
+@mixin straightFont {
+    font-family: $link-font;
+    font-weight: 100;
+    ;
+}
+>>>>>>> 809fba1b3e79a8850e703047a3b47069b89d581f

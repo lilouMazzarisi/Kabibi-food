@@ -17,75 +17,85 @@
 </head>
 
 <body>
-    <header>
-        <section class="header__top-bar">
-            <img src="section/header/img/logo.png" alt="Company's Logo">
+    <header class="Header">
+        <section class="Header__top-bar">
+            <img src="section/Header/img/logo.png" alt="Company's Logo">
             <nav>
-                <ul>
-                    <li class="header__nav--item"><a href="#">Home</a></li>
-                    <li class="header__nav--item"><a href="#">About</a></li>
-                    <li class="header__nav--item"><a href="#">Page</a></li>
-                    <li class="header__nav--item"><a href="#">Shop</a></li>
-                    <li class="header__nav--item"><a href="#">Contact</a></li>
+                <ul class="Header__nav">
+                    <li class="Header__nav--item"><a href="#">Home <i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li class="Header__nav--item"><a href="#">About</a></li>
+                    <li class="Header__nav--item"><a href="#">Page <i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li class="Header__nav--item"><a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li class="Header__nav--item"><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <a href="tel:0123456789"><i class="fa-regular fa-phone-flip"></i>+012 (345) 6789</a>
-            <a href="#">Book a table <i class="fas fa-arrow-right"></i></a>
+            <div class="Header__contact">
+                <a class="Header__contact--phone" href="tel:0123456789"><i class="fa fa-phone-flip"></i>+012 (345)
+                    6789</a>
+                <a class="Header__contact--booking" href="#">Book a table <i class="fas fa-arrow-right"></i></a>
+            </div>
         </section>
-        <section class="header_banner">
+        <section class="Header__banner">
             <h1>Best Quality Foods</h1>
-            <img src="section/header/img/img_bg2.png" alt="Best quality foods label">
-            <a href=" #"><i class="fa-solid fa-play"></i></a>
-            <a href="#">Explore our Menu <i class="fas fa-arrow-right"></i></a>
+            <img src="section/Header/img/img_bg2.png" alt="Best quality foods label">
+            <a class="Header__banner--play" href="#"><i class="fa-solid fa-play"></i></a>
+            <a class="Header__banner--button" href="#">Explore our Menu <i class="fas fa-arrow-right"></i></a>
         </section>
     </header>
     <!--CATEGORY-->
     <section class="Category">
-        <h2>Category</h2>
         <section class="Section__title">
-            <h3>Choose your best category</h3>
-            <q>Best foods for you & family</q>
+            <h2>Category</h2>
+            <div class="Section__title--subtitle">
+                <h3>Choose your best category</h3>
+                <q>Best foods for you & family</q>
+            </div>
         </section>
         <section class="Category__foods">
-            <div class="Category__foods--box-1">
-                <a href="#">
-                    <img class="Category__foods--icon" src="section/categorie/img/burger.png" alt="Burger Icon">
+            <div class="Category__foods--box">
+
+                <img class="Category__foods--icon" src="section/categorie/img/burger-svgrepo-com.svg" alt="Burger Icon">
+                <a class="Category__foods--text" href="#">
                     <p>Cheeseburger</p>
                     <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="Category__foods--box2">
-                <a href="#">
-                    <img class="Category__foods--icon" src="section/categorie/img/pizza.png" alt="Pizza Icon">
+            <div class="Category__foods--box">
+
+                <img class="Category__foods--icon" src="section/categorie/img/pizza-svgrepo-com.svg" alt="Pizza Icon">
+                <a class="Category__foods--text" href="#">
                     <p>Pizza Slice</p>
                     <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="Category__foods--box-3">
-                <a href="#">
-                    <img class="Category__foods--icon" src="section/categorie/img/coffee.png" alt="Coffee-Cup Icon">
+            <div class="Category__foods--box">
+
+                <img class="Category__foods--icon" src="section/categorie/img/cocktail-svgrepo-com.svg"
+                    alt="Coffee-Cup Icon">
+                <a class="Category__foods--text" href="#">
                     <p>Coffee-Cup</p>
                     <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="Category__foods--box-4">
-                <a href="#">
-                    <img class="Category__foods--icon" src="section/categorie/img/chicken-leg.png"
-                        alt="Chicken-Leg Icon">
+            <div class="Category__foods--box">
+                <img class="Category__foods--icon" src="section/categorie/img/chicken-leg-svgrepo-com (1).svg"
+                    alt="Chicken-Leg Icon">
+                <a class="Category__foods--text" href="#">
                     <p>Chicken-Leg</p>
                     <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="Category__foods--box5">
-                <a href="#">
-                    <img class="Category__foods--icon" src="section/categorie/img/drink.png" alt="Energy-Drink Icon">
+            <div class="Category__foods--box">
+                <img class="Category__foods--icon" src="section/categorie/img/cocktail-svgrepo-com.svg"
+                    alt="Energy-Drink Icon">
+                <a class="Category__foods--text" href="#">
                     <p>Energy-Drink</p>
                     <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="Category__foods--box-6">
-                <a href="#">
-                    <img class="Category__foods--icon" src="section/categorie/img/shrimp.png" alt="Shrimp Icon">
+            <div class="Category__foods--box">
+                <img class="Category__foods--icon" src="section/categorie/img/shrimp-svgrepo-com.svg" alt="Shrimp Icon">
+                <a class="Category__foods--text" href="#">
                     <p>Shrimp</p>
                     <i class="fas fa-arrow-right"></i>
                 </a>
@@ -93,177 +103,252 @@
         </section>
     </section>
     <!--BANNER-->
-    <section class="Banner">
+    <section class="Banner Relative">
         <img src="section/banner/img/imgfood1.png" alt="Crepes with fruits">
         <img src="section/banner/img/imgfood2.jpg" alt="Salmon salad bowl">
         <img src="section/banner/img/imgfood3.png" alt="Eggs">
     </section>
     <!--ABOUT US-->
-    <section class="About-us">
-        <h2>About us</h2>
+    <section class="About-us Relative">
         <section class="Section__title">
-            <h3>Why choose us</h3>
-            <q>Best foods for you & family</q>
+            <h2>About us</h2>
+            <div class="Section__title--subtitle">
+                <h3>Why choose us</h3>
+                <q>Best foods for you & family</q>
+            </div>
         </section>
         <img src="section/about-us/img/iconbgabout.png" alt="Best quality foods label">
-        <div class="About-us-text">
+        <div class="About-us__container">
+
             <img src="section/about-us/img/img_aboutus_home1.jpg" alt="Waiter offering a plate">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias ipsa cumque itaque optio illum at
-                libero
-                iste
-                fugiat mollitia sit delectus sint dolores rem, aliquam veniam, repellat enim odio aperiam!</p>
-            <a href="#">Discover more <i class="fas fa-arrow-right"></i></a>
+            <div class="About-us__container--text">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias ipsa cumque itaque optio illum at
+                    libero
+                    iste
+                    fugiat mollitia sit delectus sint dolores rem, aliquam veniam, repellat enim odio aperiam!
+                </p>
+                <a href="#">
+                    Discover more
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
         </div>
     </section>
     <!--MENU-->
-    <section class="Menu">
-        <h2>Our Menu</h2>
+    <section class="Menu Relative">
+
+        <img class="Menu__picture-one" src="section/menu/img/img2bg-our-menu.jpg" alt="Raw salted steak">
+        <img class="Menu__picture-two" src="section/menu/img/imgbg-our-menu.jpg" alt="Freshly baked bread">
+
         <section class="Section__title">
-            <h3>Try our special offers</h3>
-            <q>Best foods for you & family</q>
+            <h2>Our Menu</h2>
+            <div class="Section__title--subtitle">
+                <h3>Try our special offers</h3>
+                <q>Best foods for you & family</q>
+            </div>
         </section>
-        <img src="section/menu/img/img2bg-our-menu.jpg" alt="Raw salted steak">
         <section class="Menu__listing">
-            <div class="Menu__listing--item">
-                <p>Raw Scallops From Erquy</p>
-                <p>Candied Jerusalem artichokes, truffle</p>
-                <p>$89</p>
+            <div class="Menu__listing--column">
+                <div class="Menu__listing--item">
+                    <div class="Menu__listing--dish">
+                        <p>Raw Scallops From Erquy</p>
+                        <p>Candied Jerusalem artichokes, truffle</p>
+                    </div>
+                    <p>$89</p>
+                </div>
+                <div class="Menu__listing--item">
+                    <div class="Menu__listing--dish">
+                        <p>Celeriac and Truffek Ravioli</p>
+                        <p>Roasted langoustine, consommé</p>
+                    </div>
+                    <p>$89</p>
+                </div>
+                <div class="Menu__listing--item">
+                    <div class="Menu__listing--dish">
+                        <p>Cod Filet Cooked on One Side</p>
+                        <p>Chorizo, chickpea espuma,pequillos</p>
+                    </div>
+                    <p>$89</p>
+                </div>
+                <div class="Menu__listing--item">
+                    <div class="Menu__listing--dish">
+                        <p>Sea Bass Ceviche</p>
+                        <p>Avocado, butternut, lime</p>
+                    </div>
+                    <p>$89</p>
+                </div>
             </div>
-            <div class="Menu__listing--item">
-                <p>Celeriac and Truffek Ravioli</p>
-                <p>Roasted langoustine, consommé</p>
-                <p>$89</p>
-            </div>
-            <div class="Menu__listing--item">
-                <p>Cod Filet Cooked on One Side</p>
-                <p>Chorizo, chickpea espuma,pequillos</p>
-                <p>$89</p>
-            </div>
-            <div class="Menu__listing--item">
-                <p>Sea Bass Ceviche</p>
-                <p>Avocado, butternut, lime</p>
-                <p>$89</p>
-            </div>
-            <div class="Menu__listing--item">
-                <p>Corèze Pan-seared Veal Liver</p>
-                <p>Olive oil mashed potato, onion jus</p>
-                <p>$89</p>
-            </div>
-            <div class="Menu__listing--item">
-                <p>Grilled Veal Filet Mignon</p>
-                <p>Pumpkin, endives with hazelnuts</p>
-                <p>$89</p>
-            </div>
-            <div class="Menu__listing--item">
-                <p>Tender Octopus and Fennel</p>
-                <p>Citrus, wild rocket condiment</p>
-                <p>$89</p>
-            </div>
-            <div class="Menu__listing--item">
-                <p>Viennese Veal Cutlet</p>
-                <p>Ricotta and spinach gnocchi, Caccio de Pepe</p>
-                <p>$89</p>
+            <div class="Menu__listing--column">
+                <div class="Menu__listing--item">
+                    <div class="Menu__listing--dish">
+                        <p>Corèze Pan-seared Veal Liver</p>
+                        <p>Olive oil mashed potato, onion jus</p>
+                    </div>
+                    <p>$89</p>
+                </div>
+                <div class="Menu__listing--item">
+                    <div class="Menu__listing--dish">
+                        <p>Grilled Veal Filet Mignon</p>
+                        <p>Pumpkin, endives with hazelnuts</p>
+                    </div>
+                    <p>$89</p>
+                </div>
+                <div class="Menu__listing--item">
+                    <div class="Menu__listing--dish">
+                        <p>Tender Octopus and Fennel</p>
+                        <p>Citrus, wild rocket condiment</p>
+                    </div>
+                    <p>$89</p>
+                </div>
+                <div class="Menu__listing--item">
+                    <div class="Menu__listing--dish">
+                        <p>Viennese Veal Cutlet</p>
+                        <p>Ricotta and spinach gnocchi, Caccio de Pepe</p>
+                    </div>
+                    <p>$89</p>
+                </div>
             </div>
         </section>
-        <img src="section/menu/img/imgbg-our-menu.jpg" alt="Freshly baked bread">
+
     </section>
     <!--GALLERY-->
-    <section class="Gallery">
-        <h2>Gallery</h2>
-        <div class="Section__Title">
-            <h3>RESTAURANTS PHOTO Gallery</h3>
-            <q>Best foods for you & family</q>
-        </div>
-        <section class="Gallery__Img">
-            <img src="./img/img1gallerybox.jpg" class="Img__Gallery1">
-            <img src="./img/img2gallerybox.jpg" class="Img__Gallery2">
-            <img src="./img/img3gallerybox.jpg" class="Img__Gallery3">
-            <img src="./img/img4gallerybox.jpg" class="Img__Gallery4">
-            <img src="./img/img5gallerybox.jpg" class="Img__Gallery5">
-            <img src="./img/img6gallerybox.jpg" class="Img__Gallery6">
-            <img src="./img/img7gallerybox.jpg" class="Img__Gallery7">
+    <section class="Gallery Relative">
+        <section class="Section__title">
+            <h2>Gallery</h2>
+            <div class="Section__title--subtitle">
+                <h3>RESTAURANTS PHOTO Gallery</h3>
+                <q>Best foods for you & family</q>
+            </div>
         </section>
-        <a>View more photos</a>
+        <section class="Gallery__container">
+            <div class="Gallery__item first">
+                <i class="fas fa-arrow-right"></i>
+                <div class="Gallery__item--text">
+                    <h4>Family Package Dish</h4>
+                    <p>Popular food package</p>
+                </div>
+            </div>
+            <div class="Gallery__item second">
+                <i class="fas fa-arrow-right"></i>
+                <div class="Gallery__item--text">
+                    <h4>Family Package Dish</h4>
+                    <p>Popular food package</p>
+                </div>
+            </div>
+            <div class="Gallery__item third">
+                <i class="fas fa-arrow-right"></i>
+                <div class="Gallery__item--text">
+                    <h4>Family Package Dish</h4>
+                    <p>Popular food package</p>
+                </div>
+            </div>
+            <div class="Gallery__item fourth">
+                <i class="fas fa-arrow-right"></i>
+                <div class="Gallery__item--text">
+                    <h4>Family Package Dish</h4>
+                    <p>Popular food package</p>
+                </div>
+            </div>
+            <div class="Gallery__item fifth">
+                <i class="fas fa-arrow-right"></i>
+                <div class="Gallery__item--text">
+                    <h4>Family Package Dish</h4>
+                    <p>Popular food package</p>
+                </div>
+            </div>
+            <div class="Gallery__item sixth">
+                <i class="fas fa-arrow-right"></i>
+                <div class="Gallery__item--text">
+                    <h4>Family Package Dish</h4>
+                    <p>Popular food package</p>
+                </div>
+            </div>
+            <a>View more photo <i class="fas fa-arrow-right"></i></a>
+        </section>
     </section>
     <!--CHEF-->
-    <section class="Chefs__ensemble">
-        <h2>OUR CHEFS</h2>
-        <div class="Section__Title">
-            <h3>MEET PROFESSIONAL CHEFS</h3>
-            <q>Best foods for you & family</q>
-        </div>
-        <section class="Chefs__Img">
-            <img src="./img/img1team.jpg" class="Img__Chef1">
-            <img src="./img/img2team.jpg" class="Img__Chef2">
-            <img src="./img/img3team.jpg" class="Img__Chef3">
-            <img src="./img/img4team.jpg" class="Img__Chef4">
+    <section class="Chefs Relative">
+        <section class="Section__title reverse">
+            <h2>OUR CHEFS</h2>
+            <div class="Section__title--subtitle reverse">
+                <h3>MEET PROFESSIONAL CHEFS</h3>
+                <q>Best foods for you & family</q>
+            </div>
+        </section>
+        <section class="Chefs__img">
+            <img src="section/chef/img/img1team.jpg" class="Chefs__img--profile" alt="Profile Picture Chef">
+            <img src="section/chef/img/img2team.jpg" class="Chefs__img--profile" alt="Profile Picture Chef">
+            <img src="section/chef/img/img3team.jpg" class="Chefs__img--profile" alt="Profile Picture Chef">
+            <img src="section/chef/img/img4team.jpg" class="Chefs__img--profile" alt="Profile Picture Chef">
         </section>
     </section>
     <!--BLOG-->
-    <section class="Blog__ensemble">
-        <h2>OUR BLOG</h2>
-        <div class="Section__Title">
-            <h3>LATEST NEWS & BLOG</h3>
-            <q>Best foods for you & family</q>
-        </div>
-        <article class="BLog__Ensemble1">
-            <img src="">
-            <div class="Contact__Ensemble">
-                <i></i>
-                <p>BY WILLIAMSON</p>
+    <section class="Blog Relative">
+        <section class="Section__title">
+            <h2>OUR BLOG</h2>
+            <div class="Section__title--subtitle">
+                <h3>LATEST NEWS & BLOG</h3>
+                <q>Best foods for you & family</q>
             </div>
-            <div class="Date__Ensemble">
-                <i></i>
-                <p> 25 AUG 2021</p>
-            </div>
-            <p>
-                How to Run A UX Audit For Major EdTech Platform Case Study
-            </p>
-            <a>Read MORE <I></I></a>
-        </article>
-        <article class="BLog__Ensemble2">
-            <img src="">
-            <div class="Contact__Ensemble">
-                <i></i>
-                <p>BY WILLIAMSON</p>
-            </div>
-            <div class="Date__Ensemble">
-                <i></i>
-                <p> 25 AUG 2021</p>
-            </div>
-            <p>
-                How to Run A UX Audit For Major EdTech Platform Case Study
-            </p>
-            <a>Read MORE <I></I></a>
-        </article>
-        <article class="BLog__Ensemble3">
-            <img src="">
-            <div class="Contact__Ensemble">
-                <i></i>
-                <p>BY WILLIAMSON</p>
-            </div>
-            <div class="Date__Ensemble">
-                <i></i>
-                <p> 25 AUG 2021</p>
-            </div>
-            <p>
-                How to Run A UX Audit For Major EdTech Platform Case Study
-            </p>
-            <a>Read MORE <I></I></a>
-        </article>
-        <section class="Icone__Bar">
-            <img src="./img/imgbrand1.png " class="Icone__1">
-            <img src="./img/imgbrand2.png " class="Icone__2">
-            <img src="./img/imgbrand3.png " class="Icone__3">
-            <img src="./img/imgbrand4.png " class="Icone__4">
-            <img src="./img/imgbrand5.png " class="Icone__5">
-            <img src="./img/imgbrand6.png " class="Icone__6">
+        </section>
+        <section class="Blog__post">
+            <article class="Blog__post--card">
+                <img src="section/blog/img/img3blohhome01.jpg">
+                <div class="Blog__post--container">
+                    <div class="Blog__post--info">
+                        <p> <i class="fa-regular fa-circle-user"></i>BY WILLIAMSON</p>
+                        <p> <i class="fa-solid fa-calendar-days"></i>25 AUG 2021</p>
+                    </div>
+                    <p>
+                        How to Run A UX Audit For Major EdTech Platform Case Study
+                    </p>
+                    <a>Read MORE <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+            <article class="Blog__post--card">
+                <img src=" section/blog/img/img1blohhome01.jpg">
+                <div class="Blog__post--container">
+                    <div class="Blog__post--info">
+                        <p> <i class="fa-regular fa-circle-user"></i>BY WILLIAMSON</p>
+                        <p> <i class="fa-solid fa-calendar-days"></i>25 AUG 2021</p>
+                    </div>
+                    <p>
+                        How to Run A UX Audit For Major EdTech Platform Case Study
+                    </p>
+                    <a>Read MORE <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+            <article class="Blog__post--card">
+                <img src="section/blog/img/img2blohhome01.jpg">
+                <div class="Blog__post--container">
+                    <div class="Blog__post--info">
+                        <p> <i class="fa-regular fa-circle-user"></i>BY WILLIAMSON</p>
+                        <p> <i class="fa-solid fa-calendar-days"></i>25 AUG 2021</p>
+                    </div>
+                    <p>
+                        How to Run A UX Audit For Major EdTech Platform Case Study
+                    </p>
+                    <a>Read MORE <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+        </section>
+        <section class="Blog__partner">
+            <img src="section/blog/img/imgbrand3.png" alt="logo restaurant partenaire">
+            <img src="section/blog/img/imgbrand4.png " alt="logo restaurant partenaire">
+            <img src="section/blog/img/imgbrand5.png" alt="logo restaurant partenaire">
+            <img src="section/blog/img/imgbrand6.png" alt="logo restaurant partenaire">
+            <img src="section/blog/img/imgbrand1.png" alt="logo restaurant partenaire">
+            <img src="section/blog/img/imgbrand2.png" alt="logo restaurant partenaire">
         </section>
     </section>
     <!--FOOTER-->
     <footer>
-        <img src="">
         <div>
+<<<<<<< HEAD
             <h3></h3>
             <!-- Location -->
             <i class="fa-light fa-location-dot"></i>
@@ -273,6 +358,62 @@
             <i class="fa-regular fa-phone-flip"></i>
             <!--Clock-->
             <i class="fa-light fa-clock"></i>
+=======
+            <img src="" alt="">
+            <h2></h2>
+        </div>
+        <div>
+            <ul>
+                <li>About</li>
+                <li><a href="#" class="footer__puce">Home</a></li>
+                <li><a href="#" class="footer__puce">Our Story</a></li>
+                <li><a href="#" class="footer__puce">The Setting</a></li>
+                <li><a href="#" class="footer__puce">The suites</a></li>
+                <li><a href="#" class="footer__puce">Food Lists</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Facilities</li>
+                <li><a href="#" class="footer__puce">The Fontus Spa</a></li>
+                <li><a href="#" class="footer__puce">Experiences</a></li>
+                <li><a href="#" class="footer__puce">Private Functions</a></li>
+                <li><a href="#" class="footer__puce">Gallery, Events</a></li>
+                <li><a href="#" class="footer__puce">Special Offers</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Newsletters</h3>
+            <p class="footer__P">Dolor sit amet consecteur adipiscing elit sed do eiusmod tempor incididunt labore
+                et
+                dolore</p>
+            <div>
+                <input type="text" name="" id="">
+                <input type="button" value="" class="button--gold">
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li>Contact</li>
+                <li class="footer__puce">56 Main Street, D-Block,2nd Floor, Melbourne, Australia</li>
+                <li class="footer__puce">support@gmail.com</li>
+                <li class="footer__puce">+012 (345) 67 899</li>
+                <li class="footer__puce">08 am - 06 pm</li>
+            </ul>
+        </div>
+        <hr>
+        <img src="" alt="">
+        <p class="Copyright">Copyright c 2021 The Kababi - Restaurant HTML Template. Designed by <a
+                href="#">Themesflat</a></p>
+
+        <div>
+            <ul>
+                <li><a href="">facebook</a></li>
+                <li><a href="">tweter</a></li>
+                <li><a href="">youtube</a></li>
+                <li><a href="">linkedin</a></li>
+            </ul>
+>>>>>>> 809fba1b3e79a8850e703047a3b47069b89d581f
         </div>
     </footer>
 </body>
