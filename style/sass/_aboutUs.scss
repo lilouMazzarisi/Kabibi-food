@@ -5,9 +5,9 @@
 
     >img {
         @include variables.QualityLabel;
-        float: right;
-        top: -150px;
-        margin: 30px;
+        position: absolute;
+        right: 10%;
+        top: 5%;
     }
 
     &__container {
@@ -29,8 +29,5 @@
                 align-self: end;
             }
         }
-
-
-
     }
 }
