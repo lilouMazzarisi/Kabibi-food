@@ -2,7 +2,7 @@
 
 // tablett
 
-@media (min-width:variables.$breakpoint-phone) and (max-width:variables.$breakpoint-tablet) {
+@media (min-width:variables.$breakpoint-phone) and (max-width:variables.$breakpoint-desktop) {
     .Header {
         &__contact {
             display: none;

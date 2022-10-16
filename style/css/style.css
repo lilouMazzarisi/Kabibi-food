@@ -654,7 +654,7 @@ footer {
 }
 
 /*# sourceMappingURL=Footer.css.map */
-@media (min-width: 640px) and (max-width: 768px) {
+@media (min-width: 640px) and (max-width: 1024px) {
   .Header__contact {
     display: none;
   }
