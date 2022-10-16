@@ -4,19 +4,20 @@
 
     &__title {
         display: grid;
-        max-width: 60%;
+        max-width: 800px;
+        grid-template-columns: 1fr 1fr;
 
         >h2 {
             @include variables.h2Styling;
             grid-row: 1;
-            grid-column: 1;
+            grid-column: 1/3;
         }
 
         &--subtitle {
             grid-row: 1;
-            grid-column: 1;
+            grid-column: 2/3;
             align-self: center;
-            justify-self: end;
+            justify-self: start;
             text-align: center;
 
 
