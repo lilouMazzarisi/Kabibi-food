@@ -1,6 +1,5 @@
 @use 'variables';
 
-
 .Category {
     background: linear-gradient(132deg, rgba(250, 246, 240, 0.39959733893557425) 0%, rgba(250, 246, 240, 0.6404936974789917) 100%),
         url(../../section/categorie/img/imgbgcategory.jpg) no-repeat center;
@@ -9,6 +8,7 @@
     padding: 30px 0;
 
     &__foods {
+        @include variables.Frame; 
         display: flex;
         flex-wrap: wrap;
         align-items: center;

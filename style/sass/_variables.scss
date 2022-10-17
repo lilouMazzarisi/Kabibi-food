@@ -22,6 +22,11 @@ $h2-size: 9rem;
 $h3-size: 2rem;
 $h4-size: 2rem;
 
+@mixin Frame {
+    max-width:90%;
+    margin:auto; 
+}
+
 @mixin QualityLabel {
     width: 100px;
     position: relative;

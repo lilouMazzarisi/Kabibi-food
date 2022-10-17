@@ -6,11 +6,12 @@
     >img {
         @include variables.QualityLabel;
         position: absolute;
-        right: 10%;
+        right: 20%;
         top: 5%;
     }
 
     &__container {
+        @include variables.Frame; 
         display: flex;
         flex-direction: row;
         justify-content: center;

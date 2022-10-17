@@ -22,7 +22,7 @@
     }
 
     &__listing {
-
+        @include variables.Frame; 
         position: sticky;
         z-index: 5;
         display: flex;
